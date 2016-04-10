@@ -1,51 +1,44 @@
 // WordPress Generated Classes
 // http://codex.wordpress.org/CSS#WordPress_Generated_Classes
-
-body.sticky,
-article.sticky{
-  position: static;
-}
-
-// Media alignment
-.alignnone {
+figure.alignnone {
   margin-left: 0;
   margin-right: 0;
   max-width: 100%;
-  height: auto;
 }
-.aligncenter {
-  display: block;
-  // margin: ($line-height-computed / 2) auto;
-  height: auto;
-}
+
 .alignleft,
-.alignright {
-  // margin-bottom: ($line-height-computed / 2);
-  height: auto;
+.alignright,
+.aligncenter {
+  margin-right: 0;
+  margin-left: 0;
 }
-@media (small) {
-  // Only float if not on an extra small device
+
+@media #{$medium-up} {
+
+  .aligncenter {
+    display: block;
+    margin: ($base-line-height / 2) auto;
+  }
+
   .alignleft {
     float: left;
-    // margin-right: ($line-height-computed / 2);
+    margin-right: ($base-line-height / 2);
   }
   .alignright {
     float: right;
-    // margin-left: ($line-height-computed / 2);
+    margin-left: ($base-line-height / 2);
   }
 }
-
 // Captions
 .wp-caption {
-  @extend .thumbnail;
-  line-height: normal;
+  /* &:extend(.thumbnail all); */
 }
 .wp-caption-text {
-  // padding: $thumbnail-caption-padding;
+  /* &:extend(.thumbnail .caption all); */
 }
 
 // Text meant only for screen readers
 .screen-reader-text {
-  @extend .sr-only;
-  @extend .sr-only-focusable;
+  /* &:extend(.sr-only all); */
+  /* &:extend(.sr-only-focusable all); */
 }
