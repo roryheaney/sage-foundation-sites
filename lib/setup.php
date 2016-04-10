@@ -104,3 +104,21 @@ function assets() {
   wp_enqueue_script('sage/js', Assets\asset_path('scripts/main.js'), ['jquery'], null, true);
 }
 add_action('wp_enqueue_scripts', __NAMESPACE__ . '\\assets', 100);
+
+/**
+ * Custom Theme settings
+ */
+
+function my_custom_fonts() {
+  echo '<style>
+    .acf-image-uploader img {
+      max-width:150px;
+    } 
+  </style>';
+}
+
+if( function_exists('acf_add_options_page') ) {
+
+  acf_add_options_page('Theme Settings');
+
+}
