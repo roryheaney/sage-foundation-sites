@@ -1,8 +1,10 @@
-# [Sage with Foundation for Sites](https://roots.io/sage/)
+# [Sage with Foundation for Sites - Adjusted for a better Custom Web-APP experience: Rory Heaney](https://roots.io/sage/)
 [![Build Status](https://travis-ci.org/roots/sage.svg)](https://travis-ci.org/roots/sage)
 [![devDependency Status](https://david-dm.org/roots/sage/dev-status.svg)](https://david-dm.org/roots/sage#info=devDependencies)
 
 Sage is a WordPress starter theme based on HTML5 Boilerplate, gulp, Bower, and Zurb Foundation for sites, that will help you make better themes.
+
+The FOLLOWING is based on SAGE and Foundaton with a Better working GULP file and adjusting folder sturcture - Rory Heaney
 
 * Source: [https://github.com/roots/sage](https://github.com/roots/sage)
 * Homepage: [https://roots.io/sage/](https://roots.io/sage/)
