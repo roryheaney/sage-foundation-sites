@@ -84,6 +84,7 @@ gulp.task('jshintAction', function () {
 // Scripts
 gulp.task('scripts', function() {
     return gulp.src([
+        'bower_components/foundation/js/vendor/modernizr.js',
         'bower_components/foundation/js/foundation.min.js',
         'bower_components/flexslider/jquery.flexslider-min.js',
         'bower_components/picturefill/src/picturefill.js',
