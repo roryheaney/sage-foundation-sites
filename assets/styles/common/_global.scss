@@ -1,1 +1,19 @@
+@media #{$small-up} { }
+@media #{$small-only} { }
 
+@media #{$medium-down} { }
+@media #{$medium-up} { }
+@media #{$medium-only} { }
+
+@media #{$large-up} { }
+@media #{$large-only} { }
+
+@media #{$xlarge-up} { }
+@media #{$xlarge-only} { }
+
+@media #{$xxlarge-up} { }
+@media #{$xxlarge-only} { }
+
+@media only screen and (min-width: 1350px) {}
+@media only screen and (max-width: 1350px) {}
+@media only screen and (min-width: 1350px) and (max-width: 1350px) {}
